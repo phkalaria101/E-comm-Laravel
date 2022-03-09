@@ -19,7 +19,7 @@
                       <img class="slider-img" src="{{$item['gallery']}}" alt="Chania">
                     <div class="carousel-caption slider-text">
                       <h3>{{$item['name']}}</h3>
-                      <p>{{$item['description']}}</p>
+                      <p class="font1">{{$item['description']}}</p>
                     </div>
                     </a>
                   </div>
@@ -37,14 +37,14 @@
             </a>
           </div>
           <div class="trending-wrapper">
-              <br><br><h1>Tranding Products</h1><br><br>
+              <br><br><h1 class="font"><b>Tranding Products</b></h1><br><br>
               <div class="carousel-inner">
                 @foreach ($products as $item)
                 <div class="trending-item">
                   <a href="detail/{{$item['id']}}">
                     <img class="trending-img" src="{{$item['gallery']}}">
                     <div class="">
-                      <h3>{{$item['name']}}</h3>
+                      <h3>{{$item['name']}}</h3><br><br>
                     </div>
                   </a>  
                   </div>
@@ -53,5 +53,10 @@
           </div>
         </div>
   </div>
+</div><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br>
+</div><br><br><br><br><br><br><br>
 </div><br><br><br><br><br><br><br>
 @endsection

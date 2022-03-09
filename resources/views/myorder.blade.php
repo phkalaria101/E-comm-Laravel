@@ -4,7 +4,7 @@
    
     <div class="col-md-12">
         <div class="trending-wrapper">
-            <h4>Orders List</h4>
+            <h4 class="font"><b>Orders List</b></h4>
             <div class="carousel-inner">
               @foreach ($orders as $item)
               <div class="row searched-item cart-list-devider">
@@ -33,5 +33,5 @@
           </div>
           @endforeach
     </div>
-  </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection

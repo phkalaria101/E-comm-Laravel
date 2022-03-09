@@ -4,7 +4,7 @@
    
     <div class="col-md-12">
         <div class="trending-wrapper">
-            <h4>Cart List</h4>
+            <h4 class="font"><b>Cart List</b></h4>
               <a class="btn btn-success" href="/ordernow">Order Now</a><br><br>
             <div class="carousel-inner">
               @foreach ($products as $item)

@@ -1,12 +1,12 @@
 @extends('master')
 @section('content')
   <div class="custom-product">
-      <div class="col-sm-6">
+      <div class="col-sm-4">
     <table class="table table-striped">
 
         <tbody>
           <tr>
-            <td>price</td>
+            <td>Product price</td>
             <td>{{$total}} Rupees</td>
           </tr>
           <tr>
@@ -15,11 +15,11 @@
           </tr>
           <tr>
             <td>Delivery Charge</td>
-            <td>100</td>
+            <td>50</td>
           </tr>
           <tr>
             <td><b>Total Amount</b></td>
-            <td><b>{{$total + 100}}</b></td>
+            <td><b>{{$total + 50}}</b></td>
           </tr>
         </tbody>
       </table>

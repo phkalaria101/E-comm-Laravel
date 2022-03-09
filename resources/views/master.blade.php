@@ -44,7 +44,7 @@
         .trending-item 
         {
             float: right;
-            width: 20%;
+            width: 16%;
         }
         .trending-wrapper
         {
@@ -53,6 +53,7 @@
         .detail-img
         {
             height: 200px ;
+            border-radius: 20%;
         }
         .search-box 
         {
@@ -74,7 +75,7 @@
         }
         .bgcolor
         {
-            background-color: lightblue;
+            /* background-color: lightblue; */
         }
         .bgcolor-footer
         {
@@ -89,7 +90,7 @@
         {
            font-size: 18px;
         }
-        body 
+        .body 
         {
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             font-size: 19px;
@@ -108,6 +109,26 @@
             right: 9%;
             left: 44%;
             padding-bottom: 214px;
+        }
+        .carousel-inner
+        {
+            position: relative;
+            width: 110%;
+            overflow: hidden;
+        }
+        .a 
+        {
+            color: cadetblue;
+            text-decoration: none;
+        }
+        .font
+        {
+            font-family:  Papyrus;
+            font:  - bold ;
+        }
+        .font1 
+        {
+            font-family: "Trebuchet MS";
         }
     }
       

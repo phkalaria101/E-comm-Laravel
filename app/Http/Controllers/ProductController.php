@@ -79,14 +79,23 @@ class ProductController extends Controller
     }
     function orderNow()
     {
-        $userId= Session::get('user')['id'];
-        $total = DB::table('cart')
+        if(Session::get('user'))
+        {
+            $userId= Session::get('user')['id'];
+            $total = DB::table('cart')
                     ->join('products','cart.product_id','products.id')
                     ->where('cart.user_id',$userId)
                     ->sum('products.price');
-        //  echo "<pre>";
-        //  print_r ($data);
-       return view('ordernow',['total'=>$total]);
+        }
+        else
+        {
+            $userId= Session::get('user');
+            $total = DB::table('cart')
+                    ->join('products','cart.product_id','products.id')
+                    ->where('cart.user_id',$userId)
+                    ->sum('products.price');
+        }
+        return view('ordernow',['total'=>$total]);
     }
     function orderPlace(Request $req)
     {
@@ -108,13 +117,24 @@ class ProductController extends Controller
     }
     function myOrders()
     {
-        $userId= Session::get('user')['id'];
-        $orders = DB::table('orders')
-                    ->join('products','orders.product_id','products.id')
-                    ->where('orders.user_id',$userId)
-                    ->get();
-        //  echo "<pre>";
-        //  print_r ($data);
-         return view('myorder',['orders'=>$orders]);
+        if(Session::get('user'))
+        {
+            $userId= Session::get('user')['id'];
+            $orders = DB::table('orders')
+                        ->join('products','orders.product_id','products.id')
+                        ->where('orders.user_id',$userId)
+                        ->get();
+            //  echo "<pre>";
+            //  print_r ($data);
+        }
+        else
+        {
+            $userId= Session::get('user');
+            $orders = DB::table('orders')
+                        ->join('products','orders.product_id','products.id')
+                        ->where('orders.user_id',$userId)
+                        ->get();
+        }
+        return view('myorder',['orders'=>$orders]);
     }
 }
