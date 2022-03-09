@@ -1,7 +1,8 @@
 @extends('master')
 @section('content')
+<div class="bgcolor">
   <div class="custom-product">
-    
+    <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -36,7 +37,7 @@
             </a>
           </div>
           <div class="trending-wrapper">
-              <h1>Tranding Products</h1>
+              <br><br><h1>Tranding Products</h1><br><br>
               <div class="carousel-inner">
                 @foreach ($products as $item)
                 <div class="trending-item">
@@ -50,6 +51,7 @@
                 @endforeach
             </div>
           </div>
-      
+        </div>
   </div>
+</div><br><br><br><br><br><br><br>
 @endsection

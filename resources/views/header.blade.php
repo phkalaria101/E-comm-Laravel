@@ -6,6 +6,14 @@ if(Session::has('user'))
     $total=ProductController::cartitem();
 }
 ?>
+<head>
+<style>
+  li a:hover:not(.active) 
+    {
+      background-color: #111;
+    }
+</style>
+</head>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,8 +30,8 @@ if(Session::has('user'))
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="/">Home</a></li>
-        <li class=""><a href="/myorders">Orders</a></li>
+        <li class="active "><a href="/">Home</a></li>
+        <li class="active"><a href="/myorders">Orders</a></li>
       </ul>
       <form action="/search" class="navbar-form navbar-left">
         <div class="form-group">
@@ -32,13 +40,13 @@ if(Session::has('user'))
         <button type="submit" class="btn btn-default">Search</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/cartlist">Cart({{$total}})</a></li>
+        <li><a class="nav-item " href="/cartlist">Cart({{$total}})</a></li>
         @if(Session::has('user'))
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/logout">Logout</a></li>
+            <li><a class="nav-item " href="/logout">Logout</a></li>
           </ul>
         </li>
         @else

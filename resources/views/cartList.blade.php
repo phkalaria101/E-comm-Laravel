@@ -18,7 +18,7 @@
                 <div class="col-md-8">
                         <h3><b>{{$item->name}}</b></h3>
                         <h4>{{$item->description}}</h4><br>
-                        <h3><b>₹{{$item->price}}</b></h3>
+                        <h3><b>{{$item->price}}</b></h3>
                 </div>
                    
                 <div class="col-md-2">

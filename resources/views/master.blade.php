@@ -41,9 +41,9 @@
         {
             height: 100px;
         }
-        .trending-item
+        .trending-item 
         {
-            float: left;
+            float: right;
             width: 20%;
         }
         .trending-wrapper
@@ -54,9 +54,9 @@
         {
             height: 200px ;
         }
-        .search-box
+        .search-box 
         {
-            width: 800px !important;
+            width: 617px !important;
         }
         .cart-list-devider
         {
@@ -72,6 +72,45 @@
              width: 100%;
              background-color: whitesmoke;
         }
+        .bgcolor
+        {
+            background-color: lightblue;
+        }
+        .bgcolor-footer
+        {
+            background-color: darkgray;
+        }
+        .h1, .h2, .h3, h1, h2, h3 
+        {
+            margin-top: 20px;
+            margin-bottom: -4px;
+        }
+        .h3, h3 
+        {
+           font-size: 18px;
+        }
+        body 
+        {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 19px;
+            line-height: 1.42857143;
+            color: black;
+            background-color: lightblue;
+        }
+        .navbar-default 
+        {
+            background-color: darkgray;
+            border-color: darkgray;
+        }
+        /* @media screen and (min-width: 768px) */
+        .carousel-caption 
+        {
+            right: 9%;
+            left: 44%;
+            padding-bottom: 214px;
+        }
+    }
+      
     </style>
 
 </html>
