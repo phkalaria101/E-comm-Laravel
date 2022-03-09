@@ -10,7 +10,7 @@
         <input type="email" name="email" class="form-control"  placeholder="Enter email">
         </div>
         <div class="form-group">
-        <label>Password</label>
+        <label>Password :</label>
         <input type="password" name="password" class="form-control" placeholder="Password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
