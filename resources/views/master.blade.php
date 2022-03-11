@@ -57,7 +57,7 @@
         }
         .search-box 
         {
-            width: 617px !important;
+            width: 325px !important;
         }
         .cart-list-devider
         {
@@ -100,15 +100,15 @@
         }
         .navbar-default 
         {
-            background-color: darkgray;
-            border-color: darkgray;
+            /* background-color: darkgray; */
+            /* border-color: darkgray; */
         }
         /* @media screen and (min-width: 768px) */
         .carousel-caption 
         {
-            right: 9%;
-            left: 44%;
-            padding-bottom: 214px;
+            right: 13%;
+            left: 64%;
+            padding-bottom: 6px;
         }
         .carousel-inner
         {

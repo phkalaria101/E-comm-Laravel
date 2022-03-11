@@ -2,13 +2,17 @@
 @section('content')
 <div class="bgcolor">
   <div class="custom-product">
-    <div class="container">
+    
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
             </ol>
           
             <!-- Wrapper for slides -->
@@ -37,7 +41,7 @@
             </a>
           </div>
           <div class="trending-wrapper">
-              <br><br><h1 class="font"><b>Tranding Products</b></h1><br><br>
+            <marquee behavior="scroll" direction="right" scrollamount="30"><br><br><h1 class="font"><b>Tranding Products</b></h1><br><br></marquee>
               <div class="carousel-inner">
                 @foreach ($products as $item)
                 <div class="trending-item">
@@ -54,9 +58,9 @@
         </div>
   </div>
 </div><br><br><br><br><br><br><br>
-</div><br><br><br><br><br><br><br>
-</div><br><br><br><br><br><br><br>
-</div><br><br><br><br><br><br><br>
-</div><br><br><br><br><br><br><br>
-</div><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 @endsection

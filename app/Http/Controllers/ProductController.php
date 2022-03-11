@@ -62,12 +62,7 @@ class ProductController extends Controller
         }
         else
         {
-            $userId= Session::get('user');
-            $data = DB::table('cart')
-            ->join('products','cart.product_id','products.id')
-            ->select('products.*','cart.id as cart_id')
-            ->where('cart.user_id',$userId)
-            ->get();
+            $data = [];
         }
         
         return view('cartlist',['products'=>$data]);
@@ -89,11 +84,7 @@ class ProductController extends Controller
         }
         else
         {
-            $userId= Session::get('user');
-            $total = DB::table('cart')
-                    ->join('products','cart.product_id','products.id')
-                    ->where('cart.user_id',$userId)
-                    ->sum('products.price');
+           $total = [];
         }
         return view('ordernow',['total'=>$total]);
     }
